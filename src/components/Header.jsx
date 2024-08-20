@@ -1,34 +1,58 @@
+import { Link, useLocation } from 'react-router-dom';
+
 function Header() {
-  return (
-    <header>
-        <h1>John Kihm</h1>
-        <nav>
-            <ul className="nav-links">
-                <li>
-                    <a href="#about-me">
-                        <h3>About Me</h3>
-                    </a>
-                </li>
-                <li>
-                    <h3>֍</h3>
-                </li>
-                <li>
-                    <a href="#work">
-                        <h3>Work</h3>
-                    </a>
-                </li>
-                <li>
-                    <h3>֍</h3>
-                </li>
-                <li>
-                    <a href="#contact-me">
-                        <h3>Contact Me</h3>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-  );
+    const currentPage = useLocation().pathname;
+    
+    return (
+        <header>
+            <h1>John Kihm</h1>
+            <nav>
+                <ul className="nav-links">
+                    <li>
+                        <Link
+                            to="/"
+                            className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+                        >
+                            <h3>About Me</h3>
+                        </Link>
+                    </li>
+                    <li>
+                        <h3>֍</h3>
+                    </li>
+                    <li>
+                        <Link
+                            to="/Portfolio"
+                            className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
+                        >
+                            <h3>Portfolio</h3>
+                        </Link>
+                    </li>
+                    <li>
+                        <h3>֍</h3>
+                    </li>
+                    <li>
+                        <Link
+                            to="/Contact"
+                            className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+                        >
+                            <h3>Contact</h3>
+                        </Link>
+                    </li>
+                    <li>
+                        <h3>֍</h3>
+                    </li>
+                    <li>
+                        <Link
+                            to="/Resume"
+                            className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
+                        >
+                            <h3>Resume</h3>
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    );
 }
 
 export default Header;
