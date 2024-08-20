@@ -3,7 +3,7 @@ function Header() {
     <header>
         <h1>John Kihm</h1>
         <nav>
-            <ul class="nav-links">
+            <ul className="nav-links">
                 <li>
                     <a href="#about-me">
                         <h3>About Me</h3>

@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer>
-      <ul class="contact-links">
+      <ul className="contact-links">
         <li>
           <a href="mailto:john.a.kihm@gmail.com">
             <h3>john.a.kihm@gmail.com</h3>
