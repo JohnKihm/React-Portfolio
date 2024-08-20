@@ -1,18 +1,7 @@
-function Body() {
-  return (
-    <main>
-        <article id="about-me">
-            <h2>About Me</h2>
-            <figure id="profile-picture">
-                <img alt="A tall man with long brown hair, sunglasses, and a cowboy hat shows off a bouquet of flowers he just picked" src="./assets/images/profile-picture.JPG"></img>
-            </figure>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo bibendum orci, eget euismod ipsum viverra a. Cras quis purus non neque pretium euismod hendrerit ac tellus. Vivamus volutpat urna eget euismod pellentesque. Mauris massa leo, cursus et tellus quis, condimentum blandit lectus. Duis suscipit lorem eu condimentum efficitur. Duis nisi sapien, luctus id ante non, euismod interdum ex. Nunc ut feugiat est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris feugiat pharetra ex ac ultricies. Aliquam vitae tortor sed turpis posuere vehicula. Sed a auctor lorem. Donec quis est imperdiet velit feugiat mollis in a elit. Morbi nec mauris ut lectus lacinia bibendum a scelerisque ipsum. Nulla facilisi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo bibendum orci, eget euismod ipsum viverra a. Cras quis purus non neque pretium euismod hendrerit ac tellus. Vivamus volutpat urna eget euismod pellentesque. Mauris massa leo, cursus et tellus quis, condimentum blandit lectus. Duis suscipit lorem eu condimentum efficitur. Duis nisi sapien, luctus id ante non, euismod interdum ex. Nunc ut feugiat est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris feugiat pharetra ex ac ultricies. Aliquam vitae tortor sed turpis posuere vehicula. Sed a auctor lorem. Donec quis est imperdiet velit feugiat mollis in a elit. Morbi nec mauris ut lectus lacinia bibendum a scelerisque ipsum. Nulla facilisi.</p>    
-            </div>
-        </article>
+export default function Portfolio() {
+    return (
         <article id="work">
-            <h2>Work</h2>
+            <h2>Portfolio</h2>
             <ul class="work-links">
                 <li id="first-card">
                     <a href="https://johnkihm.github.io/Horiseon-refactor/">
@@ -148,28 +137,5 @@ function Body() {
                 </li>
             </ul>
         </article>
-        <article id="contact-me">
-            <h2>Contact Me</h2>
-            <ul class="contact-links">
-                <li>
-                    <a href="mailto:john.a.kihm@gmail.com">
-                        <h3>john.a.kihm@gmail.com</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/JohnKihm">
-                        <h3>Github</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/john-kihm-019a98105/">
-                        <h3>LinkedIn</h3>
-                    </a>
-                </li>
-            </ul>
-        </article>
-    </main>
-  );
+    );
 }
-
-export default Body;
